@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Inter", sans-serif;
+}
+/* STYLING SIGN UP*/
+.modal-input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.modal-input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.modal button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container-modal {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ws-btn {
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #2196f3 !important;
+  color: #ffffff;
+}
+
+.log-out {
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+
+  background-color: #04aa6d !important;
+  color: #ffffff;
+}
+
+/*  END STYLING SIGN UP*/
+
+/*MODAL STYLING SIGN UP */
+/* Full-width input fields */
+
+.logo {
+  width: 50px;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+#balance-show {
+  font-size: xx-large;
+}
+.section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+}
+.actions {
+  display: grid;
+  gap: 20px;
+}
+
+.tableFixHead {
+  overflow-y: auto;
+  height: 400px;
+}
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  padding: 18px;
+}
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.inputForm {
+  align-self: center;
+}
+
+.username {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.pin {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+.submit-btn {
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+
+  background-color: #04aa6d !important;
+  color: #ffffff;
+}
+.submit-btn:hover {
+  transform: scale(1.1);
+  background-color: #39b385;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  transition-duration: 50ms;
+}
+.text-balance {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+}
+
+/*.akcii {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}*/
+
+.transfer {
+  padding: 20px;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  border-radius: 10px;
+}
+.close-account,
+.transfer-money {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+.transfer-label,
+.amount-label {
+  justify-self: center;
+}
+h3 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+input {
+  border: none;
+  border-radius: 6px;
+}
+
+.loan {
+  padding: 10px;
+  border-radius: 10px;
+}
+.loan-money {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.amount-label1 {
+  grid-row-start: 2;
+  justify-self: center;
+}
+
+.loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.hidden {
+  display: none;
+}
+.close-acc {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  padding: 10px;
+  border-radius: 10px;
+}
+input {
+  padding: 5px;
+}
+button {
+  background-color: #1db58c;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.confirm-user,
+.confirm-pin {
+  justify-self: center;
+}
+
+footer {
+  margin-top: 90px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1.5fr 1fr;
+}
+.ioi {
+  display: flex;
+  gap: 20px;
+}
+
+.tipFirst {
+  background-color: #9be15d;
+  padding: 5px;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: smaller;
+}
+
+.tipSecond {
+  background-color: #e52a5a;
+  padding: 5px;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: smaller;
+}
+
+.sign-up {
+  width: 25px;
+}

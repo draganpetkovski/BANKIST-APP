@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+      <p class="welcome">Login to get started</p>
+      <p class="clock"></p>
+    </div>
+      <img src="logo.png" class="logo" />
+      <form class="inputForm">
+        <input type="text" class="username" placeholder="Username" />
+        <input type="text" class="pin" placeholder="Pin" />
+        <button type="submit" class="submit-btn">SUBMIT</button>
+        <button onclick="document.getElementById('id01').style.display='block'" class="ws-btn" >Sign Up</button>
+        <button class="log-out">LOG OUT</button>
+       
+      </form>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container-modal">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label><b>Full Name</b></label>
+            <input type="text" placeholder="Full Name" name="fullname" class="modal-input ownerSign"required>
+      
+            <label for="psw"><b>Pin</b></label>
+            <input type="text" placeholder="Enter Pin" name="pin" required class="modal-input registerPin">
+      
+            <label for="psw-repeat"><b>Repeat Pin</b></label>
+            <input type="text" placeholder="Repeat Pin" name="psw-repeat" class="modal-input repeatPin" required>
+            <input type="number" placeholder="Enter your starter balance" class="modal-input starter" required>
+            
+            
+      
+           
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Cancel</button>
+              <button  class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- The Modal (contains the Sign Up form) -->
+      
+      </div>
+    </header>
+    <div class="container hidden" >
+      <div class="text-balance">
+        <div class="date-bal">
+          <p>Current balance</p>
+          <p class="datum">As of 26/04/2022, 23:51</p>
+        </div>
+        <div class="current-balance">
+          <p class="balance-show">25 952,59 €</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="tabela">
+          <div class="tableFixHead">
+            <table id="customers">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th class="sortDates">Date</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody class="insert"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="transfer">
+            <h3>Tranfer money</h3>
+
+            <form class="transfer-money">
+              <input type="text" class="receiverAcc" />
+              <input type="number" class="senderAmount"/>
+              <button class="transfer-proces" style="padding:5px">Procced</button>
+              <label class="transfer-label">Transfer to</label>
+              <label class="amount-label">Amount</label>
+            </form>
+          </div>
+
+          <div class="loan">
+            <h3>Request loan</h3>
+
+            <form class="loan-money">
+              <input type="number" class="reqAmount" />
+              <button class="transfer-proces1">Procced</button>
+              <label class="amount-label1"> Amount</label>
+            </form>
+          </div>
+          <div class="close-acc">
+            <h3>Close Account</h3>
+
+            <form class="close-account">
+              <input type="text" class="account-cl" />
+              <input type="number" class="pin-cl" />
+              <button class="confirm">Confirm</button>
+              <label class="confirm-user">Confirm User</label>
+              <label class="confirm-pin">Confirm Pin</label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="ioi">
+          <span id="incomes">IN:0</span>
+          <span id="outcomes">OUT:0</span>
+          <span id="interest">INTEREST:0</span>
+          <button class="sort" style="padding:5px">SORT</button>
+        </div>
+        <div class="timer"></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
